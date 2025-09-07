@@ -49,12 +49,12 @@ target = "mv_target_clipped"
 competition_ids = [1]                   # 1 = Bundesliga, 2 = 2. Bundesliga, 3 = La Liga
 league_name = "SGB 25/26"  # Name of your league, must be exact match, can be done via env or hardcoded
 start_budget = 50_000_000              # Starting budget of your league, used to calculate current budgets of other managers
-email = os.getenv("philipp-baschab@t-online.de")         # Email to send recommendations to, can be the same as EMAIL_USER or different
+email = os.getenv("EMAIL_USER")         # Email to send recommendations to, can be the same as EMAIL_USER or different
 
 # ---------------------------------------------------
 
 # Load environment variables and login to kickbase
-USERNAME = os.getenv("Baschab")
+USERNAME = os.getenv("KICK_USER")
 PASSWORD = os.getenv("KICK_PASS")
 token = login(USERNAME, PASSWORD)
 print("Logged in to Kickbase.")
